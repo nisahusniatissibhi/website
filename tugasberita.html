@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Proyek Pemrograman Website</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #f2d6c7, #d6bda4);
+            color: black; /* Mengubah warna teks menjadi hitam */
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #e1b7a0, #d1a689);
+            color: black; /* Mengubah warna teks menjadi hitam */
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px; /* Tambahkan margin untuk memberi jarak dengan tombol */
+        }
+        .identity{
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px; /* Atur lebar logo */
+            height: auto;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            display: flex;
+            min-height: 100vh; /* Mengubah tinggi menjadi minimal 100vh */
+            flex-direction: row; /* Menetapkan arah kontainer ke baris */
+        }
+
+        /* Samping kiri (menu) */
+        .menu {
+            width: 20%;
+            background: linear-gradient(135deg, #e2bfbf, #e1b7a0);
+            padding: 20px;
+            color: black; /* Mengubah warna teks menjadi hitam */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: auto; /* Membiarkan tinggi otomatis sesuai konten */
+        }
+
+        .menu h2 {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .menu ul li:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tengah (konten utama) */
+        .content {
+            width: 60%;
+            padding: 20px;
+            background-color: #f8f8f8; /* Warna latar belakang konten */
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 0 10px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: black; /* Mengubah warna teks menjadi hitam */
+        }
+
+        /* Samping kanan (informasi tambahan) */
+        .right-panel {
+            width: 20%;
+            background: linear-gradient(135deg, #e2bfbf, #e1b7a0);
+            padding: 20px;
+            color: black; /* Mengubah warna teks menjadi hitam */
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            height: auto; /* Membiarkan tinggi otomatis sesuai konten */
+        }
+
+        .right-panel h3 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .right-panel p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #0984e3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="title">Selamat Datang</div>
+        <img src="unram.png" alt="Logo Universitas Mataram" class="logo"> <!-- Logo di pojok kanan -->
+        <div class="sub-title">Tugas Proyek Pemrograman Website</div>
+    </div>
+    <div class="identity" id="identity" style="text-align: center; margin: 0 auto;">
+        <p>Membuat Website: Wisata - Wisata Yang Ada Di Sumbawa</p>
+        <p>Disusun Oleh:</p>
+        <div style="display: flex; justify-content: center; width: 100%; max-width: 300px; margin: 0 auto;">
+            <span style="text-align: left; margin-right: 20px;">Nama:</span>
+            <span style="text-align: left;">Nisa Husniatissibi</span>
+        </div>        
+        <div style="display: flex; justify-content: center; width: 50%; max-width: 300px; margin: 0 auto;">
+            <span style="flex: 1; text-align: left;">NIM:</span>
+            <span style="flex: 2; text-align: left;">E1R022121</span>
+        </div>
+        <div style="display: flex; justify-content: center; width: 50%; max-width: 300px; margin: 0 auto;">
+            <span style="flex: 1; text-align: left;">Kelas:</span>
+            <span style="flex: 2; text-align: left;">5D</span>
+        </div>
+        <img src="nisa.jpg" style="width: 200px; height: auto; margin-top: 10px;">
+    </div>
+
+    <div id="intro" style="text-align: center; margin-top: 1%;">
+        <button class="button" onclick="showDestinations()">Masuk</button>
+    </div>
+
+    <div class="container" id="mainContent" style="display: none;">
+        <div class="menu">
+            <h2>Pilih Destinasi</h2>
+            <ul>
+                <li onclick="showContent('beach')">Pantai</li>
+                <li onclick="showContent('waterfall')">Air Terjun</li>
+                <li onclick="showContent('mountain')">Gunung Tambora</li>
+            </ul>
+        </div>
+
+        <div class="content" id="content">
+            <h2>Sejarah Sumbawa</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wQ2U4cW0IwE?si=rYYPUmCaW6BfMrqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Sumbawa adalah sebuah pulau yang terletak di Nusa Tenggara Barat, Indonesia. Dikenal karena keindahan alamnya yang masih alami, Sumbawa menawarkan berbagai destinasi wisata yang menarik, mulai dari pantai, air terjun, hingga gunung berapi.Sejarah Sumbawa dapat dilacak sejak abad ke-14 ketika pulau ini menjadi bagian dari kekuasaan Kerajaan Majapahit. Saat itu, Majapahit adalah kekuatan besar di Indonesia, yang mencakup wilayah luas, termasuk Sumbawa, sebagai pusat perdagangan rempah-rempah. Ketika pengaruh Majapahit menurun, pulau ini kemudian terbagi menjadi beberapa kerajaan lokal, yang paling menonjol adalah Kerajaan Sumbawa dan Kesultanan Bima. Kerajaan Sumbawa sendiri dikenal kuat dalam perdagangan, terutama hasil pertanian dan rempah-rempah seperti kayu manis dan pala, yang menjadi komoditas penting pada masa itu. Di sisi timur pulau, Kesultanan Bima berkembang dengan budaya Islam yang kuat, setelah Islam mulai menyebar di wilayah ini pada abad ke-17. Kesultanan Bima memiliki hubungan politik dan dagang dengan kerajaan-kerajaan di Sulawesi dan Maluku.</p>
+            <p>Pada awal abad ke-19, Sumbawa menjadi terkenal di seluruh dunia karena letusan Gunung Tambora pada tahun 1815. Letusan ini adalah yang terbesar dalam sejarah modern, yang menghancurkan kerajaan Tambora dan menyebabkan "tahun tanpa musim panas" di seluruh dunia. Letusan ini tidak hanya menghancurkan sebagian besar wilayah sekitar tetapi juga mengubah pola cuaca global.Selama masa kolonial, Belanda mulai menanamkan pengaruhnya di Sumbawa. Pada awal abad ke-20, Sumbawa menjadi bagian dari Hindia Belanda, meskipun kerajaan lokal seperti Kesultanan Bima masih mempertahankan otonomi terbatas di bawah pemerintahan kolonial.Setelah kemerdekaan Indonesia pada tahun 1945, Sumbawa menjadi bagian dari wilayah Negara Kesatuan Republik Indonesia. Saat ini, pulau Sumbawa terbagi menjadi beberapa kabupaten, yaitu Kabupaten Sumbawa, Kabupaten Sumbawa Barat, dan Kota Bima, dengan potensi besar dalam bidang pertanian, peternakan, dan pariwisata yang semakin berkembang.</p>
+            <p>Sumbawa adalah pulau besar yang terletak di provinsi Nusa Tenggara Barat, Indonesia. Wilayah ini memiliki keindahan alam yang luar biasa dan potensi wisata yang sangat beragam, mulai dari pantai eksotis, gunung berapi, air terjun, hingga kekayaan budaya yang masih lestari..Pilih destinasi di sebelah kiri untuk melihat informasi lebih lanjut.</p>
+        </div>
+
+        <div class="right-panel">
+            <h3>Keunikan Sumbawa</h3>
+            <p>Kabupaten Sumbawa adalah kabupaten di bagian barat Pulau Sumbawa, provinsi Nusa Tenggara Barat, Indonesia. Ibu kotanya adalah Sumbawa Besar. Pada pertengahan tahun 2024, jumlah penduduk kabupaten Sumbawa sebanyak 526.008 jiwa.</p>
+            <p>Sumbawa memiliki berbagai keunikan salah satunya yaitu pulau Bungin yang termasuk dalam wilayah Kecamatan Alas, Kabupaten Sumbawa.</p>
+            <p>Pulau Bungin merupakan pulau terpadat di dunia yang memiliki kepadatan 15000 jiwa/km². Hal ini terjadi karena luas Pulau Bungin tidak sampai 8 hektare dan ditempati sekitar 3000 jiwa dengan luas wilayah yaitu 15.195 km².</p>
+        </div>
+    </div>
+
+    <script>
+        function showDestinations() {
+            document.getElementById('header').innerText = "Wisata - Wisata Sumbawa"; // Mengubah judul header
+            document.getElementById('intro').style.display = 'none'; // Menyembunyikan tombol Masuk
+            document.getElementById('identity').style.display = 'none'; // Menyembunyikan tombol Masuk
+            document.getElementById('mainContent').style.display = 'flex'; // Menampilkan konten utama
+        }
+
+        function showContent(destination) {
+            const content = document.getElementById('content');
+            if (destination === 'beach') {
+                content.innerHTML = `
+                    <h2>Pantai di Sumbawa</h2>
+                    <p>Pantai-pantai di Sumbawa menyuguhkan pesona alam yang memukau dengan keindahan yang masih sangat alami dan belum banyak tersentuh oleh wisatawan. Dari pasir putih lembut yang membentang luas hingga air laut yang jernih dengan gradasi warna biru kehijauan.  Selain itu, keindahan bawah laut Sumbawa yang dihiasi terumbu karang yang masih terjaga serta beragam biota laut menjadikan tempat ini surga tersembunyi bagi para pecinta snorkeling dan diving. Di setiap sudutnya, pemandangan matahari terbenam yang memukau semakin menambah daya tarik pantai-pantai di Sumbawa, membuat siapa pun yang berkunjung merasa terpesona oleh keindahan alam yang luar biasa. </p>
+                    <p>Adapun rekomendasi pantai - pantai yang dapat anda kunjungi yaitu: </p>
+                    <h3>1. Pantai Kencana</h3>
+                    <img src="kencana.jpeg">
+                    <p>Pantai Kencana adalah salah satu destinasi wisata populer di Pulau Sumbawa, Nusa Tenggara Barat. Terletak sekitar 11 kilometer dari pusat Kota Sumbawa Besar tepatnya di Desa Labuhan Sumbawa, Kecamatan Labuhan Badas, Kabupaten Sumbawa. Pantai ini dikenal karena keindahan alamnya yang memukau, pasir putih yang lembut, serta air laut yang jernih. Pantai ini menjadi salah satu lokasi favorit bagi wisatawan lokal maupun mancanegara yang ingin menikmati keindahan pantai dengan suasana yang relatif tenang dan alami. </p>
+                    <p>Pulau Sumbawa memiliki keindahan alam yang juga tak kalah indahnya dengan beberapa pulau lainnya di Indonesia. Pantai menjadi salah satu keindahan alam yang ada dan banyak dikunjungi wisatawan. Salah satu pantai yang memiliki keindahan adalah Pantai Kencana Sumbawa. Pantai Kencana menjadi salah satu pantai yang menawarkan keindahan alam yang begitu memukau. Pantai ini juga disebut-sebut begitu eksotis ketika dipandang mata. Dari setiap sudut pantai, wisatawan dapat melihat keindahan tersebut. Bukan hanya itu saja, ketika wisatawan ingin merefresh tubuh dan mendapatkan piknik yang berkualitas bersama teman, sahabat maupun keluarga pantai ini sangat direkomendasikan. Dengan keindahan yang ditawarkan, wisatawan merasa betah berlama-lama ditempat ini.</p>
+                    <p>Pantai Kencana adalah pantai yang terkenal dengan pasir putih dan air yang jernih. Pantai ini sangat cocok untuk berenang dan bersantai. Pantai Kencana juga menawarkan pemandangan matahari terbenam yang indah. Terdapat beberapa warung makan yang menyediakan makanan khas Sumbawa. Anda bisa menghabiskan waktu di sini sambil menikmati kuliner lokal.</p>
+                    <h3>2. Pantai Maluk</h3>
+                    <img src="maluk.jpeg">
+                    <p>Pantai Maluk terletak di Kabupaten Sumbawa Barat. Pantai ini terkenal dengan gelombang ombaknya yang besar, sehingga menjadi destinasi favorit bagi para peselancar. Selain itu, pantai ini memiliki pasir putih dan air laut yang jernih. Pantai Maluk juga memiliki pemandangan alam yang indah, dengan latar belakang perbukitan yang hijau.</p>
+                    <p>Selain surfing, Anda juga dapat menikmati aktivitas snorkeling dan menyelam di sekitar pantai ini. Keindahan bawah lautnya sangat menawan, dengan beragam ikan dan terumbu karang. Terdapat beberapa penginapan di sekitar Pantai Maluk yang bisa Anda gunakan sebagai tempat beristirahat setelah beraktivitas seharian.</p>
+                    <h3>3. Pantai Ai Lemak</h3>
+                    <img src="ailemak.jpeg">
+                    <p>Pantai Ai Lemak terletak di Kecamatan Labuhan Badas, sekitar 30 menit dari pusat kota Sumbawa Besar.Pantai ini masih sepi dan terjaga keasriannya. Pasir putih yang lembut dan air laut yang jernih membuat Pantai Ai Lemak menjadi tempat ideal untuk mencari ketenangan.Pantai ini cocok untuk wisatawan yang ingin menikmati suasana alami dan damai, jauh dari keramaian. Pantai Ai Lemak juga terkenal karena keindahan bawah lautnya, dengan terumbu karang yang masih alami.</p>
+                `;
+            } else if (destination === 'waterfall') {
+                content.innerHTML = `
+                    <h2>Air Terjun di Sumbawa</h2>
+                    <p>Pulau Sumbawa, yang dikenal dengan keindahan alamnya, juga memiliki beberapa air terjun yang mempesona dan menjadi daya tarik wisata yang luar biasa. Berikut adalah beberapa pilihan air terjun terkenal di Sumbawa yang bisa anda kunjungi: </p>
+                    <h3>1. Air Terjun Mata Jitu</h3>
+                    <img src="jitu.jpeg">
+                    <p>Air Terjun Mata Jitu adalah salah satu air terjun paling terkenal di Sumbawa, bahkan pernah dikunjungi oleh tokoh-tokoh terkenal, termasuk Putri Diana. Air terjun ini memiliki empat undakan dengan air yang sangat jernih dan membentuk kolam-kolam alami di bawahnya. Air terjun ini berada di tengah hutan lebat Pulau Moyo, sehingga pengunjung dapat merasakan ketenangan dan keindahan alam yang menakjubkan</p>
+                    <p>Air terjun ini disebut "Mata Jitu" karena airnya jatuh dengan lembut dan tampak seperti mata air yang keluar dari batu. Suasana alami yang asri dan akses yang agak tersembunyi menambah daya tarik bagi wisatawan yang mencari ketenangan. </p>
+                    <h3>2. Air Terjun Agal</h3>
+                    <img src="agal.jpeg">
+                    <p>Air Terjun Agal adalah salah satu air terjun tersembunyi yang terletak di Desa Marente, Kecamatan Alas, Kabupaten Sumbawa, Nusa Tenggara Barat. Meskipun tidak sepopuler air terjun lainnya di Sumbawa, seperti Mata Jitu, Air Terjun Agal menawarkan keindahan alam yang sangat alami dan tenang, jauh dari keramaian wisatawan.</p>
+                    <p>Akses menuju Air Terjun Agal cukup menantang, karena wisatawan harus berjalan kaki atau trekking melalui jalur yang dikelilingi oleh hutan tropis yang lebat, perbukitan, dan sungai. Perjalanan ini cukup menantang, tetapi pemandangan alam sekitar membuat usaha tersebut sangat sepadan.Air Terjun Agal memiliki air yang jernih dan segar, yang jatuh dari ketinggian tebing, membentuk kolam alami di bawahnya. Kolam ini sangat cocok untuk berenang atau sekadar merendam kaki setelah perjalanan trekking yang melelahkan.</p>
+                    <h3>3. Air terjun Ai beling</h3>
+                    <img src="beling.jpeg">
+                    <p> Ai Beling adalah air terjun yang terletak di tengah hutan tropis yang lebat, sehingga perjalanan ke sana akan memberikan pengalaman trekking yang cukup menantang. Air terjun ini masih sangat alami dan jarang dikunjungi, sehingga pengunjung dapat menikmati keindahan alam dengan damai. </p>
+                `;
+            } else if (destination === 'mountain') {
+                content.innerHTML = `
+                    <h2>Gunung Tambora</h2>
+                    <img src="Tambora.jpg">
+                    <p>Gunung Tambora adalah salah satu gunung berapi yang paling terkenal di dunia, terletak di Pulau Sumbawa, Nusa Tenggara Barat, Indonesia. Gunung ini memiliki tinggi sekitar 2.850 meter di atas permukaan laut dan terkenal karena letusannya yang dahsyat pada tahun 1815, yang merupakan salah satu letusan gunung berapi terbesar dalam sejarah manusia. Letusan ini menyebabkan kematian lebih dari 70.000 orang dan mengakibatkan perubahan iklim global yang dikenal sebagai "Tahun Tanpa Musim Panas" pada tahun 1816, yang mempengaruhi panen dan cuaca di berbagai belahan dunia. </p>
+                    <p>Pada April 1815, Gunung Tambora meletus dengan kekuatan yang sangat dahsyat. Letusan ini tidak hanya menghancurkan kehidupan di sekitar gunung, tetapi juga mengirimkan abu vulkanik ke atmosfer bumi. Abu ini menyebar ke seluruh dunia, menyebabkan penurunan suhu global, gangguan musim panen, dan kelaparan di beberapa bagian dunia. Dampak dari letusan ini masih dikenang sebagai salah satu bencana alam terbesar dalam sejarah. Selain letusan bersejarahnya, Gunung Tambora juga menarik banyak wisatawan, terutama pendaki, karena keindahan alamnya. Di sekitar gunung, terdapat padang rumput luas, hutan tropis, dan pemandangan kaldera yang memukau di puncaknya. Kaldera Tambora adalah salah satu kawah terbesar di dunia, dengan diameter sekitar 6-7 kilometer dan kedalaman lebih dari 1.200 meter.</p>
+                    <p> Terdapat dua jalur untuk menjadi gunung tambora yaitu Sisi Barat yang merupakan jalur paling populer dan sering digunakan oleh para pendaki. Jalur ini lebih panjang, namun medannya relatif lebih landai sehingga cocok bagi pendaki pemula. Dan sisi selatan Jalur ini lebih pendek tetapi lebih terjal dan cocok bagi pendaki yang berpengalaman. Jalur ini melewati savana yang luas dan pemandangan yang menakjubkan.</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
